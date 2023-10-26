@@ -1,0 +1,174 @@
+/*background-color: #e3e3e3;
+background-color:white;
+*/
+
+@body-color: white;
+@menu-text-color: rgb(28, 28, 28);
+@menu-text-hover-color: rgb(37, 37, 37);
+@gold-color: #dcc567;
+@gold-color: #07ef35;
+
+@radiance-dark: #907015;
+@radiance-light: #e1c248;
+//@gold-color-linear-gradient-best: linear-gradient(to bottom, #e1c248 0%,#907015 50%,#e1c248 100%);
+@gold-color-linear-gradient-best: linear-gradient(to bottom, #e1c248 0%,#907015 50%,#e1c248 100%);
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+@gold-color-linear-gradient-best2:  linear-gradient(to bottom,  #e1c248 0%,#907015 50%,#e1c248 100%);
+@border-width: 1px;
+@border-width-thick: 2px;
+
+@button-color: #2c2c2e;
+@button-color-text: white;
+@menu-border-bottom-color: #1c1c1c;
+@background-icon-color: #f1f1f7;
+@shadow-color:   rgba(0, 0, 0, 0.60);
+@border-input-color:#e8ecef;
+@animationLessTime: 0.5s;
+@input-color:#595959;
+@primary-small-menu-background:rgba(14, 10, 10, 0.62);//не менять!
+
+/*@animationLessLocation: '../../node_modules/animate.less/source';
+@import "@{animationLessLocation}/animated.less";
+@import "@{animationLessLocation}/bounce.less";
+@import "@{animationLessLocation}/bounceIn.less";
+@import "@{animationLessLocation}/bounceInDown.less";
+@import "@{animationLessLocation}/bounceInLeft.less";
+@import "@{animationLessLocation}/bounceInRight.less";
+@import "@{animationLessLocation}/bounceInUp.less";
+@import "@{animationLessLocation}/bounceOut.less";
+@import "@{animationLessLocation}/bounceOutDown.less";
+@import "@{animationLessLocation}/bounceOutLeft.less";
+@import "@{animationLessLocation}/bounceOutRight.less";
+@import "@{animationLessLocation}/bounceOutUp.less";*/
+
+.line-gradient-gold {
+  height: 2px;
+  background-image: @gold-color-linear-gradient-best;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url("../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url("../fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-ExtraBold;
+  src: url("../fonts/Gilroy-ExtraBold.ttf");
+}
+@font-face {
+  font-family: Gilroy-Semibold;
+  src: url("../fonts/Gilroy-Semibold.ttf");
+}
+@font-face {
+  font-family: Gilroy-MediumItalic;
+  src: url("../fonts/Gilroy-MediumItalic.ttf");
+}
+@font-face {
+  font-family: Britannic-Bold;
+  src: url("../fonts/Britannic Bold Regular.ttf");
+}
+@font-face {
+  font-family: Gilroy-SemiboldItalic;
+  src: url("../fonts/Gilroy-SemiBoldItalic.ttf");
+}
+
+.text-style-14-28 {  //14px rgb(28, 28, 28);
+  font-size: 14px;
+  font-family: Gilroy-Medium, sans-serif;
+  color: @menu-text-color;
+}
+.text-style-15-37 {  //15px rgb(37, 37, 37);
+  font-size: 15px;
+  font-family: Gilroy-Medium, sans-serif;
+  color: @menu-text-hover-color;
+}
+.text-style-14-37 {  //14px rgb(37, 37, 37);
+  font-size: 14px;
+  font-family: Gilroy-Medium, sans-serif;
+  color: @menu-text-color;
+}
+.text-style-15-28 {  //15px rgb(28, 28, 28);
+  font-size: 15px;
+  font-family: Gilroy-Medium, sans-serif;
+  color: @menu-text-hover-color;
+}
+.title-style{
+  font-size: 40px;
+  font-family: Gilroy, sans-serif;
+  color: rgb(28, 28, 28);
+}
+.text-style-18-28 { //15px rgb(28, 28, 28);
+  font-size: 18px;
+  font-family: Gilroy, sans-serif;
+  color: rgb(28, 28, 28);
+}
+.quotes-style{
+  font-size: 48px;
+  font-family: Britannic-Bold, sans-serif;
+  color: rgba(228, 228, 238, 0.8);
+}
+
+
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: @gold-color-linear-gradient-best;
+
+  /* Create the gradient. */
+  //background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-image: linear-gradient(to bottom, #e1c248 0%,#907015 50%,#e1c248 100%);;
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ // -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+
+.gradient-box {
+
+  display: flex;
+  align-items: center;
+  //width: 50vw;
+  width: 90%;
+  margin: auto;
+  max-width: 22em;
+
+  position: relative;
+  padding: 30% 2em;
+  box-sizing: border-box;
+
+  @border: 5px;
+  color: #FFF;
+  background: transparent;
+  background-clip: padding-box; /* !important */
+  border: solid @border transparent; /* !important */
+  border-radius: 1em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -@border; /* !important */
+    border-radius: inherit; /* !important */
+    background: @gold-color-linear-gradient-best;
+  }
+}
